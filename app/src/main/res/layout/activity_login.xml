@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.5"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/instagram" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/LOGIN_EMAIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/LOGIN_PASSWORD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ACTIVITY_LOGIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#4834DF"
+            android:text="@string/login"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/ACTIVITY_SIGNUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="#4834DF"
+            android:text="@string/sign_up"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            tools:ignore="ButtonStyle" />
+
+
+    </LinearLayout>
+</LinearLayout>

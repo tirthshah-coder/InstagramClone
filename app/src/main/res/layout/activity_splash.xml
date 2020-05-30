@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/LOGO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/instagram" />
+
+    <TextView
+        android:id="@+id/LOGO_TXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/instagram"
+        android:textColor="#E44236"
+        android:textSize="44sp" />
+
+</LinearLayout>

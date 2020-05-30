@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Welcome">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/APPBAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/TOOLBAR"
+            layout="@layout/my_toolbar" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/TAB"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<androidx.viewpager.widget.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/VIEWPAGER"/>
+
+</LinearLayout>
